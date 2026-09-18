@@ -10,7 +10,11 @@
     </head>
     <body>
         <section id="flex-r">
-            <h2> <i class="fa-regular fa-hand"></i> Rock Paper Scissors</h2>
+            <h2> <i class="fa-regular fa-hand"></i>  
+                <span class="rock-title">ROCK</span>
+                <span class="paper-title">PAPER</span>
+                <span class="scissor-title">SCISSORS</span>
+            </h2>
         </section>
         <div id="whole">
             <div id="flex-c">
@@ -28,8 +32,8 @@
                 <hr>
                 <div id="selects"> 
                     <p id="select"> SELECT ROUNDS</p>
-                    <button class="sel"> 5 ROUNDS</button>
-                    <button class="sel"> 7 ROUNDS</button>
+                    <button id="fifth" class="sel"> 5 ROUNDS</button>
+                    <button id="seventh" class="sel"> 7 ROUNDS</button>
                 </div>
             </div>
         <div id="main">
@@ -53,40 +57,48 @@
             </div>
         </div>
         <div id="counters">
-            <div class="count">
+            <div id="your" class="count">
                 <i class="fa-solid fa-circle-question"></i>
                 <h2> YOU</h2>
             </div>
             <div class="bolt">
                 <p> <i class="fa-solid fa-bolt"></i> VS <i class="fa-solid fa-bolt"></i></p>
             </div>
-            <div class="count">
+            <div id="computer" class="count">
                 <i class="fa-solid fa-microchip"></i>
                 <h2> COMPUTER </h2>
             </div>
         </div>
+        <div id="win-score">
+
+        </div>
         <div id="choices">
             <div class="choice">
-              <button><i class="fa-solid fa-hand-fist"></i>
+              <button class="rock-btn"><i class="fa-solid fa-hand-fist"></i>
               <p> Rock</p>  </button>
             </div>
             <div class="choice">
-              <button><i class="fa-solid fa-hand"></i>
+              <button class="paper-btn"><i class="fa-solid fa-hand"></i>
               <p> Paper</p> </button> 
             </div>
             <div class="choice">
-              <button><i class="fa-solid fa-hand-peace"></i>
-              <p> Paper</p> </button> 
+              <button class="scissor-btn"><i class="fa-solid fa-hand-peace"></i>
+              <p> Scissor</p> </button> 
             </div>
         </div>
         <div id="restart">
-            <button><i class="fa-solid fa-arrows-rotate"></i> RESTART GAME </button>
+            <button id="restart-btn"><i class="fa-solid fa-arrows-rotate"></i> RESTART GAME </button>
         </div>
         </div>
+        </div>
+        <div id="game-dark"></div>
+        <div id="game-over">
+            <h2> GAME OVER</h2>
+            <p id="final-result"></p>
+            <p id="final-score"></p>
+            <button id="play-again"> PLAY AGAIN</button>
         </div>
     </body>
-    
-
 </html>
 
 
