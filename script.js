@@ -167,6 +167,7 @@ function updateScore(yourChoice, computerChoice) {
     }
 }
 
+
 function checkGameOver() {
     if (currentRound > totalRounds) {
         gameFinished = true;
