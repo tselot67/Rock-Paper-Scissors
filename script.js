@@ -128,41 +128,41 @@ function updateScore(yourChoice, computerChoice) {
         computerScore.innerHTML =
             Number(computerScore.innerHTML) + 1;
         winScore.innerHTML =
-            `<img src="./public/icons/skull-svgrepo-com.svg" class="skull-icon"> <h3>YOU LOSE</h3> <img src="./public/icons/skull-svgrepo-com.svg" class="skull-icon">`;
+            `<img src="./Public/icons/skull-svgrepo-com.svg" class="skull-icon"> <h3>YOU LOSE</h3> <img src="./public/icons/skull-svgrepo-com.svg" class="skull-icon">`;
         winScore.className = 'celebration lose';
     } else if (yourChoice === 'Rock' && computerChoice === 'Scissor') {
         yourScore.innerHTML =
             Number(yourScore.innerHTML) + 1;
         winScore.innerHTML =
-            `<img src="./public/icons/clapping-clap-svgrepo-com.svg" class="clapping-icon"> <h3>YOU WIN</h3> <img src="./public/icons/clapping-clap-svgrepo-com.svg" class="clapping-icon">`;
+            `<img src="./Public/icons/clapping-clap-svgrepo-com.svg" class="clapping-icon"> <h3>YOU WIN</h3> <img src="./public/icons/clapping-clap-svgrepo-com.svg" class="clapping-icon">`;
         winScore.className = 'celebration win';
     } else if (yourChoice === 'Paper' && computerChoice === 'Rock') {
         yourScore.innerHTML =
             Number(yourScore.innerHTML) + 1;
         winScore.innerHTML =
-            `<img src="./public/icons/clapping-clap-svgrepo-com.svg" class="clapping-icon"> <h3>YOU WIN</h3> <img src="./public/icons/clapping-clap-svgrepo-com.svg" class="clapping-icon">`;
+            `<img src="./Public/icons/clapping-clap-svgrepo-com.svg" class="clapping-icon"> <h3>YOU WIN</h3> <img src="./public/icons/clapping-clap-svgrepo-com.svg" class="clapping-icon">`;
         winScore.className = 'celebration win';
     } else if (yourChoice === 'Paper' && computerChoice === 'Scissor') {
         computerScore.innerHTML =
             Number(computerScore.innerHTML) + 1;
         winScore.innerHTML =
-            `<img src="./public/icons/skull-svgrepo-com.svg" class="skull-icon"> <h3>YOU LOSE</h3> <img src="./public/icons/skull-svgrepo-com.svg" class="skull-icon">`;
+            `<img src="./Public/icons/skull-svgrepo-com.svg" class="skull-icon"> <h3>YOU LOSE</h3> <img src="./public/icons/skull-svgrepo-com.svg" class="skull-icon">`;
         winScore.className = 'celebration lose';
     } else if (yourChoice === 'Scissor' && computerChoice === 'Rock') {
         computerScore.innerHTML =
             Number(computerScore.innerHTML) + 1;
         winScore.innerHTML =
-            `<img src="./public/icons/skull-svgrepo-com.svg" class="skull-icon"> <h3>YOU LOSE</h3> <img src="./public/icons/skull-svgrepo-com.svg" class="skull-icon">`;
+            `<img src="./Public/icons/skull-svgrepo-com.svg" class="skull-icon"> <h3>YOU LOSE</h3> <img src="./public/icons/skull-svgrepo-com.svg" class="skull-icon">`;
         winScore.className = 'celebration lose';
     } else if (yourChoice === 'Scissor' && computerChoice === 'Paper') {
         yourScore.innerHTML =
             Number(yourScore.innerHTML) + 1;
         winScore.innerHTML =
-            `<img src="./public/icons/clapping-clap-svgrepo-com.svg" class="clapping-icon"> <h3>YOU WIN</h3> <img src="./public/icons/clapping-clap-svgrepo-com.svg" class="clapping-icon">`;
+            `<img src="./Public/icons/clapping-clap-svgrepo-com.svg" class="clapping-icon"> <h3>YOU WIN</h3> <img src="./public/icons/clapping-clap-svgrepo-com.svg" class="clapping-icon">`;
         winScore.className = 'celebration win';
     } else {
         winScore.innerHTML =
-            `<img src="./public/icons/handshake-svgrepo-com.svg" class="handshake-icon"> <h3>DRAW</h3> <img src="./public/icons/handshake-svgrepo-com.svg" class="handshake-icon">`;
+            `<img src="./Public/icons/handshake-svgrepo-com.svg" class="handshake-icon"> <h3>DRAW</h3> <img src="./public/icons/handshake-svgrepo-com.svg" class="handshake-icon">`;
         winScore.className = 'celebration draw';
     }
 }
@@ -211,7 +211,7 @@ restartBtn.addEventListener('click', function () {
     document.getElementById('computer').innerHTML =
         '<i class="fa-solid fa-microchip"></i><h2> COMPUTER</h2>';
     winScore.innerHTML =
-        `<img src="./public/icons/restart-square-svgrepo-com.svg" class="restart-icon"><h3> GAME RESTARTED</h3>`;
+        `<img src="./Public/icons/restart-square-svgrepo-com.svg" class="restart-icon"><h3> GAME RESTARTED</h3>`;
     winScore.classList.add('celebration');
     updateRound();
 });
